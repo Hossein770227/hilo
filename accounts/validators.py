@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 phone_regex = re.compile(r"^(?:\+98|0)9\d{9}$")
-
+ 
 def validate_iranian_phone(value):
 
     if not phone_regex.match(value):
