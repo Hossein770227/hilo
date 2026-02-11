@@ -44,11 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # my apps
     'accounts',
-]
 
-# admin interface config 
-X_FRAME_OPTIONS = "SAMEORIGIN"
-SILENCED_SYSTEM_CHECKS = ["security.W019"]
+    # others apps
+    'rosetta',
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -116,11 +115,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa'
+# LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
-
+TIME_ZONE = 'Asia/Tehran'
+# TIME_ZONE = 'UTC'
 USE_I18N = True
+USE_L10N = True
 
 USE_TZ = True
 
@@ -132,3 +133,12 @@ STATIC_URL = 'static/'
 
 # account settings
 AUTH_USER_MODEL = 'accounts.MyUser'
+
+# django admin interface
+X_FRAME_OPTIONS = "SAMEORIGIN"
+SILENCED_SYSTEM_CHECKS = ["security.W019"]
+
+LANGUAGES = (
+    ("en", ("English")),
+    ("fa", ("persian")),
+)
