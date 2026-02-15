@@ -1,0 +1,35 @@
+{% extends "_base.html" %}
+{% load i18n %}
+
+{% load crispy_forms_tags %}
+
+{% block page_title %}
+  {% trans "verify code" %}
+{% endblock page_title %}
+
+{% block content %}
+
+    <!-- User Area -->
+    <div class="user-area pt-100 pb-70">
+        <div class="container">
+            <div class="user-width">
+                <div class="user-form">
+                    <div class="contact-form">
+                        <h2>{% trans "verify code" %}</h2>
+                        <form action="" action="" method="Post">
+                            {% csrf_token %}
+                            {{ form|crispy}}
+                            <div class="col-lg-12 ">
+                                <button type="submit" class="default-btn btn-bg-three">
+                                    {% trans "verify" %}
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Area End -->
+  
+{% endblock content %}
