@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 17:14+0330\n"
-"PO-Revision-Date: 2026-02-11 17:24+0330\n"
+"POT-Creation-Date: 2026-02-15 14:18+0330\n"
+"PO-Revision-Date: 2026-02-15 14:21+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -30,6 +30,10 @@ msgstr "تاریخ‌های مهم"
 #: .\admin.py:53
 msgid "Date/Time (Persian)"
 msgstr "تاریخ/زمان (فارسی)"
+
+#: .\apps.py:6
+msgid "accounts managers"
+msgstr "مدیریت کاربران"
 
 #: .\forms.py:12 .\forms.py:49 .\forms.py:98
 msgid "Password"

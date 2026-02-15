@@ -24,9 +24,5 @@ from django.conf.urls.i18n import i18n_patterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
+     path('rosetta/', include('rosetta.urls'))
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-if 'rosetta' in settings.INSTALLED_APPS:
-    urlpatterns += [
-        path('rosetta/', include('rosetta.urls'))
-    ]

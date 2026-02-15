@@ -1,6 +1,7 @@
 <!doctype html>
 {% load static %}
-<html lang="zxx">
+{% load i18n %}
+<html lang="en" dir="rtl">
     <head>
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
@@ -32,11 +33,14 @@
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="{% static "assets/images/favicon.png" %}">
 
-        <title>Hilo - Organic Food Shop HTML Template</title>
+        <title>
+            {% block page_title %}
+            
+            {% endblock page_title %}
+        </title>
     </head>
     <body>
-
-               <!-- Start Navbar Area -->
+        <!-- Start Navbar Area -->
         <div class="navbar-area">
             <!-- Menu For Mobile Device -->
             <div class="mobile-nav">
@@ -92,7 +96,7 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link active">
+                                            <a href="#" class="nav-link">
                                                 Shop 
                                                 <i class='bx bx-chevron-down'></i>
                                             </a>
@@ -128,7 +132,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="cart.html" class="nav-link active">
+                                                    <a href="cart.html" class="nav-link">
                                                         Cart  
                                                     </a>
                                                 </li>
@@ -169,13 +173,13 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">
+                                            <a href="#" class="nav-link active">
                                                 User
                                                 <i class='bx bx-chevron-down'></i>
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
+                                                    <a href="log-in.html" class="nav-link active">
                                                         Log In
                                                     </a>
                                                 </li>
@@ -348,25 +352,26 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-4">
                         <div class="inner-content">
-                            <h2>Cart</h2>
+                            <h2> Log In</h2>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li>Cart</li>
+                                <li> Log In</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-7 col-md-8">
                         <div class="inner-img">
-                            <img src="{% static "assets/images/logos/logo-1.png" %}" alt="Images">
+                            <img src="{% static "assets/images/inner-banner/inner-banner4.png" %}" alt="Images">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Inner Banner Area End -->
-
-
+        {% block content %}
+          
+        {% endblock content %}
 
         {% include "includes/footer.html" %}
 

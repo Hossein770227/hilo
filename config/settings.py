@@ -50,6 +50,8 @@ INSTALLED_APPS = [
 
     # others apps
     'rosetta',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +149,7 @@ LANGUAGES = (
     ("en", ("English")),
     ("fa", ("persian")),
 )
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
