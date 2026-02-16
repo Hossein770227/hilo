@@ -23,7 +23,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, verbose_name=_("category"), on_delete=models.CASCADE, related_name='products')
     price_main = models.PositiveIntegerField(_("price"))
     price_with_discount = models.PositiveIntegerField(_("price with discount"), blank=True, null=True)
-    amount = models.IntegerField(_("amount"), validators=MinValueValidator(1))
+    amount = models.IntegerField(_("amount"), validators=[MinValueValidator(1)])
     date_time_added = models.DateTimeField(_("date time added"), auto_now_add=True)
 
     class Meta:
