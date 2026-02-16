@@ -154,3 +154,8 @@ LANGUAGES = (
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+# config translate
+LOCALE_PATHS = [
+os.path.join(BASE_DIR, 'templates/locale'),
+]

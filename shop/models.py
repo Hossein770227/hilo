@@ -8,6 +8,8 @@ from django.core.validators import MinValueValidator
 class Category(models.Model):
     name = models.CharField(_("name"), max_length=100)
     slug = models.SlugField(max_length=150, unique=True,allow_unicode=True, blank=True)
+    is_active= models.BooleanField(_("is active"))
+    description = models.TextField(_("description"), null= True, blank=True)
     class Meta:
         verbose_name = _("category")
         verbose_name_plural = _("categories")
@@ -21,6 +23,7 @@ class Product(models.Model):
     title = models.CharField(_("title"), max_length=100)
     slug = models.SlugField(_("slug"), unique=True)
     category = models.ForeignKey(Category, verbose_name=_("category"), on_delete=models.CASCADE, related_name='products')
+    image = models.ImageField(_("image"), upload_to='images/')
     price_main = models.PositiveIntegerField(_("price"))
     price_with_discount = models.PositiveIntegerField(_("price with discount"), blank=True, null=True)
     amount = models.IntegerField(_("amount"), validators=[MinValueValidator(1)])
