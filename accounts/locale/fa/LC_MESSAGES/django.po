@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-15 14:18+0330\n"
-"PO-Revision-Date: 2026-02-15 14:21+0330\n"
+"POT-Creation-Date: 2026-02-17 18:48+0330\n"
+"PO-Revision-Date: 2026-02-17 18:51+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -129,6 +129,37 @@ msgstr "کد OTP"
 #: .\models.py:52
 msgid "otp codes"
 msgstr "کدهای OTP"
+
+#: .\templates\accounts\login.html:7
+msgid "login"
+msgstr "ورود"
+
+#: .\templates\accounts\login.html:18
+msgid "Log In"
+msgstr "ورود"
+
+#: .\templates\accounts\login.html:24
+msgid "Log In Now"
+msgstr "همین حالا وارد شوید"
+
+#: .\templates\accounts\user_register.html:6
+#: .\templates\accounts\user_register.html:17
+msgid "Register"
+msgstr "ثبت نام"
+
+#: .\templates\accounts\user_register.html:23
+msgid "register"
+msgstr "ثبت نام"
+
+#: .\templates\accounts\verify_code.html:7
+#: .\templates\accounts\verify_code.html:18
+#| msgid "Verification code"
+msgid "verify code"
+msgstr "کد تأیید"
+
+#: .\templates\accounts\verify_code.html:24
+msgid "verify"
+msgstr "تأیید"
 
 #: .\validators.py:11
 msgid "Enter a valid Iranian cellphone number."
