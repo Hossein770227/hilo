@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # django ckeditor5
+    'django_ckeditor_5',
     # my apps
     'accounts',
     'shop',
@@ -160,3 +163,18 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 LOCALE_PATHS = [
 os.path.join(BASE_DIR, 'templates/locale'),
 ]
+
+#config ckeditor5
+
+CKEDITOR_5_CONFIGS = {
+    'default': {
+        'editor_class': 'ClassicEditor', # تعیین نوع ویرایشگر
+        'toolbar': [
+            'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote', 'imageUpload', 'mediaEmbed', 'undo', 'redo'
+        ],
+    },
+    'comment': {
+        'editor_class': 'InlineEditor', # یک مثال دیگر
+        'toolbar': ['bold', 'italic', 'link'],
+    }
+}

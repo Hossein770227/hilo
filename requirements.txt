@@ -7,8 +7,11 @@ dj-email-url==1.0.6
 Django==6.0.2
 django-admin-interface==0.32.0
 django-cache-url==3.4.6
+django-ckeditor-5==0.2.19
+django-ckeditor5==0.0.4
 django-colorfield==0.14.0
 django-crispy-forms==2.5
+django-js-asset==3.1.2
 django-rosetta==0.10.3
 environs==14.5.0
 idna==3.11

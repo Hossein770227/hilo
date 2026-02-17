@@ -4,12 +4,14 @@ from django.utils.translation import gettext_lazy as _
 from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator
 
+from django_ckeditor_5.fields import CKEditor5Field 
+
 
 class Category(models.Model):
     name = models.CharField(_("name"), max_length=100)
     slug = models.SlugField(max_length=150, unique=True,allow_unicode=True, blank=True)
     is_active= models.BooleanField(_("is active"))
-    description = models.TextField(_("description"), null= True, blank=True)
+    description = CKEditor5Field(_("description"), null= True, blank=True)
     class Meta:
         verbose_name = _("category")
         verbose_name_plural = _("categories")
@@ -26,6 +28,8 @@ class Product(models.Model):
     image = models.ImageField(_("image"), upload_to='images/')
     price_main = models.PositiveIntegerField(_("price"))
     price_with_discount = models.PositiveIntegerField(_("price with discount"), blank=True, null=True)
+    description = CKEditor5Field(_("description"))
+    short_description = models.CharField(_("short description"),blank=True, max_length=255)
     amount = models.IntegerField(_("amount"), validators=[MinValueValidator(1)])
     date_time_added = models.DateTimeField(_("date time added"), auto_now_add=True)
 
