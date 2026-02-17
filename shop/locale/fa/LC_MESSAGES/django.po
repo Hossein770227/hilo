@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 18:41+0330\n"
+"PO-Revision-Date: 2026-02-17 18:45+0330\n"
+"Last-Translator: Anonymous User <anonymous@user.tld>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.3\n"
+
+#: .\admin.py:19
+msgid "Product Count"
+msgstr "تعداد محصول"
+
+#: .\apps.py:7
+msgid "shop"
+msgstr "فروشگاه"
+
+#: .\models.py:11
+msgid "name"
+msgstr "نام"
+
+#: .\models.py:13
+msgid "is active"
+msgstr "فعال است؟"
+
+#: .\models.py:14 .\models.py:31
+msgid "description"
+msgstr "توضیحات"
+
+#: .\models.py:16 .\models.py:27
+msgid "category"
+msgstr "دسته"
+
+#: .\models.py:17
+msgid "categories"
+msgstr "دسته‌ بندی ها"
+
+#: .\models.py:25
+msgid "title"
+msgstr "عنوان"
+
+#: .\models.py:26
+msgid "slug"
+msgstr "اسلاگ"
+
+#: .\models.py:28
+msgid "image"
+msgstr "تصویر"
+
+#: .\models.py:29
+msgid "price"
+msgstr "قیمت"
+
+#: .\models.py:30
+msgid "price with discount"
+msgstr "قیمت با تخفیف"
+
+#: .\models.py:32
+msgid "short description"
+msgstr "شرح مختصر"
+
+#: .\models.py:33
+msgid "amount"
+msgstr "مقدار"
+
+#: .\models.py:34
+msgid "date time added"
+msgstr "تاریخ زمان اضافه شده"
+
+#: .\models.py:37
+msgid "product"
+msgstr "محصول"
+
+#: .\models.py:38
+msgid "products"
+msgstr "محصولات"
+
+#: .\models.py:47
+msgid "discount price must be less than original price"
+msgstr "قیمت تخفیف باید کمتر از قیمت اصلی باشد"
