@@ -11,8 +11,10 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 import os
+import socket
 from pathlib import Path
 from environs import Env
+from django.contrib.messages import constants
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -57,6 +59,7 @@ INSTALLED_APPS = [
     'rosetta',
     'crispy_forms',
     'crispy_bootstrap4',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -177,4 +180,27 @@ CKEDITOR_5_CONFIGS = {
         'editor_class': 'InlineEditor', # یک مثال دیگر
         'toolbar': ['bold', 'italic', 'link'],
     }
+}
+
+# DJANGO_DEBUG
+if DEBUG:
+    INTERNAL_IPS = [
+        "127.0.0.1",
+    ]
+    try:
+        hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+        INTERNAL_IPS += [ip[: ip.rfind(".")] + ".1" for ip in ips]
+    except:
+        pass
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://your-domain.com",
+]
+
+# messages config
+MESSAGE_TAGS={
+    constants.ERROR:"danger",
 }

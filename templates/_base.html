@@ -61,8 +61,8 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Home 
+                                    <a href="{% url "shop:product_list" %}" class="nav-link">
+                                        {% trans "Home" %} 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -85,13 +85,13 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active">
-                                        Pages 
+                                        {% trans "Pages" %} 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="about.html" class="nav-link">
-                                                About
+                                                {% trans "About Us" %}
                                             </a>
                                         </li>
 
@@ -230,7 +230,7 @@
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Shop
+                                        {% trans "Shop" %}
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -259,7 +259,7 @@
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Blog
+                                        {% trans "Blog" %}
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -283,7 +283,7 @@
 
                                 <li class="nav-item">
                                     <a href="contact.html" class="nav-link">
-                                        Contact
+                                        {% trans "Contact" %}
                                     </a>
                                 </li>
                             </ul>
@@ -292,10 +292,8 @@
                                 <div class="language-nav-list">
                                     <select class="language-list-item">
                                         <option>English</option>
-                                        <option>العربيّة</option>
-                                        <option>Deutsch</option>
-                                        <option>Português</option>
-                                        <option>简体中文</option>
+                                        <option>{% trans "persian" %}</option>
+
                                     </select>	
                                 </div>
 
@@ -326,10 +324,7 @@
                                      <div class="language-on-list">
                                         <select class="language-list-item">
                                             <option>English</option>
-                                            <option>العربيّة</option>
-                                            <option>Deutsch</option>
-                                            <option>Português</option>
-                                            <option>简体中文</option>
+                                            <option>{% trans "persian" %}</option>
                                         </select>	
                                     </div>
     
