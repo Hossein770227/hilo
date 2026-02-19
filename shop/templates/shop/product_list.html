@@ -1,5 +1,448 @@
 {% extends "_base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block page_title %}
+  
+{% endblock page_title %}
+
+{% block navbar %}
+    <!-- Start Navbar Area -->
+    <div class="navbar-area">
+        <!-- Menu For Mobile Device -->
+        <div class="mobile-nav">
+            <a href="index.html" class="logo">
+                <img src="{% static "assets/images/logos/logo-1.png" %}" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Menu For Desktop Device -->
+        <div class="main-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static "assets/images/logos/logo-1.png" %}" alt="Logo">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a href="{% url "shop:product_list" %}" class="nav-link active">
+                                    {% trans "home" %} 
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link active">
+                                            {% trans "all products" %}  
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-2.html" class="nav-link">
+                                            Home Two
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-3.html" class="nav-link">
+                                            Home Three
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Pages 
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">
+                                            About
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Shop 
+                                            <i class='bx bx-chevron-down'></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="shop-details.html" class="nav-link">
+                                                    Shop Details
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="shop-details-left-sidebar.html" class="nav-link">
+                                                    Shop Details Left Sidebar
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="shop-details-right-sidebar.html" class="nav-link">
+                                                    Shop Details Right Sidebar 
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="tracking-order.html" class="nav-link">
+                                                    Tracking Order 
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="customer-services.html" class="nav-link">
+                                                    Customer Services  
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="compare.html" class="nav-link">
+                                                    Compare  
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="cart.html" class="nav-link">
+                                                    Cart  
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="checkout.html" class="nav-link">
+                                                    Checkout  
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="wishlist.html" class="nav-link">
+                                                    Wishlist  
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="my-account.html" class="nav-link">
+                                                    My Account  
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="faq.html" class="nav-link">
+                                            FAQ
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">
+                                            Team
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="testimonials.html" class="nav-link">
+                                            Testimonials
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            User
+                                            <i class='bx bx-chevron-down'></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="log-in.html" class="nav-link">
+                                                    Log In
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="register.html" class="nav-link">
+                                                    Registration
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="forget-password.html" class="nav-link">
+                                                    Forget Password
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="terms-condition.html" class="nav-link">
+                                            Terms & Conditions
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="privacy-policy.html" class="nav-link">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">
+                                            404 page
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="search-page.html" class="nav-link">
+                                            Search Page
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="coming-soon.html" class="nav-link">
+                                            Coming Soon
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Shop
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="shop-left-sidebar.html" class="nav-link">
+                                            Shop Left Sidebar 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="shop-right-sidebar.html" class="nav-link">
+                                            Shop Right Sidebar 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="shop-grid.html" class="nav-link">
+                                            Shop Grid 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="shop-full-width-sidebar.html" class="nav-link">
+                                            Shop Full Width Sidebar
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Blog
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog-1.html" class="nav-link">
+                                            Blog Style One 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-2.html" class="nav-link">
+                                            Blog Style Two 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">
+                                            Blog Details 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="nav-right-side">
+                            <ul class="nav-right-list">
+                                <li><a href="#"><i class='bx bx-repost'></i></a></li>
+                                <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                <li class="cart-span">
+                                    <a href="#"><i class='bx bx-cart'></i></a>
+                                    <span>1</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="side-nav-responsive">
+            <div class="container">
+                <div class="dot-menu">
+                    <div class="circle-inner">
+                        <div class="circle circle-one"></div>
+                        <div class="circle circle-two"></div>
+                        <div class="circle circle-three"></div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="side-nav-inner">
+                        <div class="side-nav justify-content-center align-items-center">
+                            <div class="side-nav-item">
+                                <ul class="nav-right-list">
+                                    <li><a href="#"><i class='bx bx-repost'></i></a></li>
+                                    <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                    <li class="cart-span">
+                                        <a href="#"><i class='bx bx-cart'></i></a>
+                                        <span>1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Banner Area -->
+    <div class="banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="banner-item-content">
+                        <span>WELCOME TO OUR SHOP</span>
+                        <h1>Order the Organic Foods Now!</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscins elitr, seddiams nonumy eirmod.</p>
+                        <a href="#" class="default-btn btn-bg-one">Order Now</a>
+                        <img src="{% static "assets/images/home-one/home-one-img1.png" %}" alt="Banner Images">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <div class="banner-item-side">
+                                <h3>Sign Up on Shop</h3>
+                                <span>Get a 30% Offer!</span>
+                                <a href="#" class="newslette-btn">Newsletter</a>
+                                <img src="{% static "assets/images/home-one/home-one-img2.png" %}" alt="Banner Images">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-6">
+                            <div class="banner-item-side-2">
+                                <h3>Big Sale Offer</h3>
+                                <span>Up to 70% Discount</span>
+                                <a href="shop-grid.html" class="shop-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Area End -->
+  
+{% endblock navbar %}
 
 {% block content %}
-  product list
+
+
+    <!-- New Arrival Area -->
+    <section class="new-arrival-area pt-100 pb-70">
+        <div class="container">
+            <div class="section-title text-center">
+                {% if products %}
+                    <h2>{% trans "All Products" %}</h2>
+                else:
+                {% trans "product does not exist" %}
+                {% endif %}
+            </div>
+
+            <div class="row pt-45">
+                {% for product in products %}
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="new-arrival-item">
+                            <div class="arrival-img">
+                                <a href="shop-details.html">
+                                    <img src="{{product.image.url}}" alt="{{product.title}}">
+                                </a>
+                                <ul class="arrival-item-action">
+                                    <li><a href="#"><i class='bx bx-repost'></i></a></li>
+                                    <li><a href="wishlist.html"><i class='bx bx-heart'></i></a></li>
+                                    <li><a href="cart.html"><i class='bx bx-cart'></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="content">
+                                <h3><a href="shop-details.html">{{product.title}}</a></h3>
+                                <span>
+                                    {% trans "toman" %} {{product.price_main}} 
+                                    {% if product.price_with_discount %}
+                                        <del>{{product.price_with_discount}} {% trans "toman" %}</del>
+                                      
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- New Arrival Area End -->
+
+    <!-- Choose Area -->
+    <div class="choose-area pt-100 pb-70">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Why You Choose Us</h2>
+            </div>
+            <div class="row pt-45">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-card">
+                        <i class="flaticon-24-hours"></i>
+                        <h3>24/7 Online Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-card">
+                        <i class="flaticon-leaf"></i>
+                        <h3>100% Pure Foods</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 offset-lg-0 offset-sm-3">
+                    <div class="choose-card">
+                        <i class="flaticon-service"></i>
+                        <h3>Home Delivery</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Choose Area End -->
+
+    <!-- Newsletter Area Section -->
+    <div class="newsletter-area-section pt-100 pb-70">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Keep in Touch With Newsletter</h2>
+                <p class="margin-auto">
+                    Get 35% Discount on Subscribe
+                </p>
+            </div>
+
+            <div class="newsletter-area pt-45">
+                <form class="newsletter-form" data-toggle="validator" method="POST">
+                    <input type="email" class="form-control" placeholder="Enter your email" name="EMAIL" required autocomplete="off">
+                    <button class="subscribe-btn" type="submit">
+                        Subscribe
+                    </button>
+                    <div id="validator-newsletter" class="form-result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Area Section End -->
 {% endblock content %}

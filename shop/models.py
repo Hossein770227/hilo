@@ -10,7 +10,7 @@ from django_ckeditor_5.fields import CKEditor5Field
 class Category(models.Model):
     name = models.CharField(_("name"), max_length=100)
     slug = models.SlugField(max_length=150, unique=True,allow_unicode=True, blank=True)
-    is_active= models.BooleanField(_("is active"))
+    is_active= models.BooleanField(_("is active"), default=True)
     description = CKEditor5Field(_("description"), null= True, blank=True)
     class Meta:
         verbose_name = _("category")
@@ -31,6 +31,7 @@ class Product(models.Model):
     description = CKEditor5Field(_("description"))
     short_description = models.CharField(_("short description"),blank=True, max_length=255)
     amount = models.IntegerField(_("amount"), validators=[MinValueValidator(1)])
+    is_active = models.BooleanField(_("is active"), default=True)
     date_time_added = models.DateTimeField(_("date time added"), auto_now_add=True)
 
     class Meta:
