@@ -26,7 +26,7 @@ from debug_toolbar.toolbar import debug_toolbar_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
-    path('products/', include('shop.urls')),
+    path('', include('shop.urls')),
     
     path('rosetta/', include('rosetta.urls')),
     path('ckeditor5/', include('django_ckeditor_5.urls')), 

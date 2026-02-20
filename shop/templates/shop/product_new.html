@@ -3,7 +3,7 @@
 {% load i18n %}
 
 {% block page_title %}
-    {% trans "product list" %}
+    {% trans "new product" %}
 {% endblock page_title %}
 
 {% block navbar %}
@@ -39,7 +39,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="{% url "shop:new_product" %}" class="nav-link">
-                                            {% trans "new product" %}
+                                            {% trans "new products" %}
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -310,7 +310,7 @@
         <div class="container">
             <div class="section-title text-center">
             {% if products %}
-                <h2>{% trans "All Products" %}</h2>
+                <h2>{% trans "New Products" %}</h2>
             {% else %}
                 <h2>{% trans "No products found" %}</h2> 
             {% endif %}
