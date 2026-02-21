@@ -8,8 +8,8 @@
 {% endblock page_title %}
 
 {% block navbar %}
-  
-{% include "includes/navbar_one.html" %}
+{% trans "verify code" as verify  %}
+{% include "includes/navbar_one.html" with nav_title=verify %}
 {% endblock navbar %}
 
 {% block content %}

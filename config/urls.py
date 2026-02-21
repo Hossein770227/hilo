@@ -37,5 +37,3 @@ if settings.DEBUG:
     urlpatterns += [
         path('__debug__/', include(debug_toolbar.urls)),
     ]
-
-urlpatterns += i18n_patterns(path('admin/', admin.site.urls))

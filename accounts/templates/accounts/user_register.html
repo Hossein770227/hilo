@@ -7,8 +7,8 @@
 {% endblock page_title %}
 
 {% block navbar %}
-  
-{% include "includes/navbar_one.html" %}
+{% trans "user register" as register  %}
+{% include "includes/navbar_one.html" with nav_title=register %}
 {% endblock navbar %}
 
 {% block content %}

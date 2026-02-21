@@ -29,7 +29,8 @@ env.read_env
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DJANGO_DEBUG')
+# DEBUG = env.bool('DJANGO_DEBUG')
 
 ALLOWED_HOSTS = ['127.0.0.1','localhost',]
 
@@ -64,6 +65,7 @@ INSTALLED_APPS = [
     
 MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
+     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
