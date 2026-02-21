@@ -33,7 +33,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link active">
+                                        <a href="{% url "shop:product_list" %}" class="nav-link active">
                                             {% trans "all products" %}  
                                         </a>
                                     </li>
@@ -323,6 +323,11 @@
                                 <a href="{{ product.get_absolute_url }}">
                                     <img src="{{product.image.url}}" alt="{{product.title}}">
                                 </a>
+                                {% if product.get_recent_products %}
+                                    <div class="arrival-item-tag">
+                                    <h3>New</h3>
+                                </div>
+                                {% endif %}
                                 <ul class="arrival-item-action">
                                     <li><a href="#"><i class='bx bx-repost'></i></a></li>
                                     <li><a href="wishlist.html"><i class='bx bx-heart'></i></a></li>

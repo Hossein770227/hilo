@@ -23,4 +23,4 @@ class NewProduct(ListView):
     template_name = 'shop/product_new.html'
 
     def get_queryset(self):
-        return Product.objects.filter(is_active=True).order_by('-date_time_added')[:10]
+        return Product.get_recent_products(days=10)

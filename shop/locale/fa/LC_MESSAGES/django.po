@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 18:41+0330\n"
-"PO-Revision-Date: 2026-02-17 18:45+0330\n"
+"POT-Creation-Date: 2026-02-20 18:14+0330\n"
+"PO-Revision-Date: 2026-02-20 18:17+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -31,7 +31,7 @@ msgstr "فروشگاه"
 msgid "name"
 msgstr "نام"
 
-#: .\models.py:13
+#: .\models.py:13 .\models.py:34
 msgid "is active"
 msgstr "فعال است؟"
 
@@ -75,18 +75,124 @@ msgstr "شرح مختصر"
 msgid "amount"
 msgstr "مقدار"
 
-#: .\models.py:34
+#: .\models.py:35
 msgid "date time added"
 msgstr "تاریخ زمان اضافه شده"
 
-#: .\models.py:37
+#: .\models.py:38
 msgid "product"
 msgstr "محصول"
 
-#: .\models.py:38
+#: .\models.py:39
 msgid "products"
 msgstr "محصولات"
 
-#: .\models.py:47
+#: .\models.py:48
 msgid "discount price must be less than original price"
 msgstr "قیمت تخفیف باید کمتر از قیمت اصلی باشد"
+
+#: .\templates\shop\product_detail.html:6
+#| msgid "product"
+msgid "product detail"
+msgstr "جزئیات محصول"
+
+#: .\templates\shop\product_detail.html:111
+#| msgid "description"
+msgid "Description"
+msgstr "توضیحات"
+
+#: .\templates\shop\product_list.html:6
+#| msgid "products"
+msgid "product list"
+msgstr "لیست محصولات"
+
+#: .\templates\shop\product_list.html:31 .\templates\shop\product_new.html:31
+msgid "home"
+msgstr "صفحه اصلی"
+
+#: .\templates\shop\product_list.html:37 .\templates\shop\product_new.html:37
+#| msgid "products"
+msgid "all products"
+msgstr "همه محصولات"
+
+#: .\templates\shop\product_list.html:42 .\templates\shop\product_new.html:6
+#| msgid "product"
+msgid "new product"
+msgstr "محصول جدید"
+
+#: .\templates\shop\product_list.html:313
+#| msgid "products"
+msgid "All Products"
+msgstr "همه محصولات"
+
+#: .\templates\shop\product_list.html:315
+#: .\templates\shop\product_new.html:315
+#| msgid "Product Count"
+msgid "No products found"
+msgstr "محصولی یافت نشد"
+
+#: .\templates\shop\product_list.html:338
+#: .\templates\shop\product_list.html:339
+#: .\templates\shop\product_list.html:341
+#: .\templates\shop\product_new.html:338 .\templates\shop\product_new.html:339
+#: .\templates\shop\product_new.html:341
+msgid "toman"
+msgstr "تومان"
+
+#: .\templates\shop\product_list.html:357
+#: .\templates\shop\product_new.html:357
+msgid "Why You Choose Us"
+msgstr "چرا ما را انتخاب می‌کنید؟"
+
+#: .\templates\shop\product_list.html:363
+#: .\templates\shop\product_new.html:363
+msgid "24/7 Online Support"
+msgstr "پشتیبانی آنلاین 24 ساعته"
+
+#: .\templates\shop\product_list.html:364
+#: .\templates\shop\product_new.html:364
+msgid ""
+"27-hour technical support per week: Our guarantee is that your website will "
+"be up and running."
+msgstr ""
+"پشتیبانی فنی ۲۷ ساعته در هفته: تضمین ما این است که وب‌سایت شما راه‌اندازی و "
+"فعال خواهد شد."
+
+#: .\templates\shop\product_list.html:371
+#: .\templates\shop\product_new.html:371
+#, python-format
+msgid "100%% quality"
+msgstr "کیفیت ۱۰۰٪"
+
+#: .\templates\shop\product_list.html:372
+#: .\templates\shop\product_new.html:372
+msgid ""
+"By choosing us, you will not only receive a quality product, but also have "
+"the constant assurance of our support."
+msgstr ""
+"با انتخاب ما، نه تنها محصولی با کیفیت دریافت خواهید کرد، بلکه از پشتیبانی "
+"مداوم ما نیز اطمینان خواهید داشت."
+
+#: .\templates\shop\product_list.html:379
+#: .\templates\shop\product_new.html:379
+msgid "Home Delivery"
+msgstr "تحویل درب منزل"
+
+#: .\templates\shop\product_list.html:380
+#: .\templates\shop\product_new.html:380
+msgid ""
+"Receive the product at your doorstep. Your quality product will be delivered"
+" directly and quickly to you."
+msgstr ""
+"محصول را درب منزل خود دریافت کنید. محصول با کیفیت شما مستقیماً و سریع به "
+"دستتان خواهد رسید."
+
+#: .\templates\shop\product_new.html:42
+#| msgid "products"
+msgid "new products"
+msgstr "محصولات جدید"
+
+#: .\templates\shop\product_new.html:313
+#| msgid "products"
+msgid "New Products"
+msgstr "محصولات جدید"

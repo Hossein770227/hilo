@@ -1,3 +1,6 @@
+from django.utils import timezone
+from datetime import timedelta
+
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -46,6 +49,15 @@ class Product(models.Model):
        super().clean()
        if self.price_with_discount and self.price_with_discount >= self.price_main:
             raise ValidationError(_("discount price must be less than original price"))
+
+    @classmethod
+    def get_recent_products(cls, days=10):
+        cutoff_date = timezone.now() - timedelta(days=days)
+        
+        return cls.objects.filter(
+            is_active=True,
+            date_time_added__gte=cutoff_date
+        ).order_by('-date_time_added')
 
     def __str__(self):
         return self.title
