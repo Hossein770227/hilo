@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 18:14+0330\n"
-"PO-Revision-Date: 2026-02-20 18:17+0330\n"
+"POT-Creation-Date: 2026-02-21 18:01+0330\n"
+"PO-Revision-Date: 2026-02-21 18:02+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -27,130 +27,137 @@ msgstr "تعداد محصول"
 msgid "shop"
 msgstr "فروشگاه"
 
-#: .\models.py:11
+#: .\models.py:14
 msgid "name"
 msgstr "نام"
 
-#: .\models.py:13 .\models.py:34
+#: .\models.py:16 .\models.py:37
 msgid "is active"
 msgstr "فعال است؟"
 
-#: .\models.py:14 .\models.py:31
+#: .\models.py:17 .\models.py:34
 msgid "description"
 msgstr "توضیحات"
 
-#: .\models.py:16 .\models.py:27
+#: .\models.py:19 .\models.py:30
 msgid "category"
 msgstr "دسته"
 
-#: .\models.py:17
+#: .\models.py:20
 msgid "categories"
 msgstr "دسته‌ بندی ها"
 
-#: .\models.py:25
+#: .\models.py:28
 msgid "title"
 msgstr "عنوان"
 
-#: .\models.py:26
+#: .\models.py:29
 msgid "slug"
 msgstr "اسلاگ"
 
-#: .\models.py:28
+#: .\models.py:31
 msgid "image"
 msgstr "تصویر"
 
-#: .\models.py:29
+#: .\models.py:32
 msgid "price"
 msgstr "قیمت"
 
-#: .\models.py:30
+#: .\models.py:33
 msgid "price with discount"
 msgstr "قیمت با تخفیف"
 
-#: .\models.py:32
+#: .\models.py:35
 msgid "short description"
 msgstr "شرح مختصر"
 
-#: .\models.py:33
+#: .\models.py:36
 msgid "amount"
 msgstr "مقدار"
 
-#: .\models.py:35
+#: .\models.py:38
 msgid "date time added"
 msgstr "تاریخ زمان اضافه شده"
 
-#: .\models.py:38
+#: .\models.py:41
 msgid "product"
 msgstr "محصول"
 
-#: .\models.py:39
+#: .\models.py:42
 msgid "products"
 msgstr "محصولات"
 
-#: .\models.py:48
+#: .\models.py:51
 msgid "discount price must be less than original price"
 msgstr "قیمت تخفیف باید کمتر از قیمت اصلی باشد"
 
 #: .\templates\shop\product_detail.html:6
-#| msgid "product"
 msgid "product detail"
 msgstr "جزئیات محصول"
 
 #: .\templates\shop\product_detail.html:111
-#| msgid "description"
 msgid "Description"
 msgstr "توضیحات"
 
-#: .\templates\shop\product_list.html:6
-#| msgid "products"
-msgid "product list"
-msgstr "لیست محصولات"
+#: .\templates\shop\product_discounted.html:6
+#: .\templates\shop\product_discounted.html:47
+#: .\templates\shop\product_list.html:47 .\templates\shop\product_new.html:47
+#| msgid "product list"
+msgid "product discounted"
+msgstr "تخفیف دار ها"
 
+#: .\templates\shop\product_discounted.html:31
 #: .\templates\shop\product_list.html:31 .\templates\shop\product_new.html:31
 msgid "home"
 msgstr "صفحه اصلی"
 
+#: .\templates\shop\product_discounted.html:37
 #: .\templates\shop\product_list.html:37 .\templates\shop\product_new.html:37
-#| msgid "products"
 msgid "all products"
 msgstr "همه محصولات"
 
+#: .\templates\shop\product_discounted.html:42
 #: .\templates\shop\product_list.html:42 .\templates\shop\product_new.html:6
-#| msgid "product"
 msgid "new product"
 msgstr "محصول جدید"
 
+#: .\templates\shop\product_discounted.html:313
 #: .\templates\shop\product_list.html:313
-#| msgid "products"
 msgid "All Products"
 msgstr "همه محصولات"
 
+#: .\templates\shop\product_discounted.html:315
 #: .\templates\shop\product_list.html:315
 #: .\templates\shop\product_new.html:315
-#| msgid "Product Count"
 msgid "No products found"
 msgstr "محصولی یافت نشد"
 
-#: .\templates\shop\product_list.html:338
-#: .\templates\shop\product_list.html:339
-#: .\templates\shop\product_list.html:341
-#: .\templates\shop\product_new.html:338 .\templates\shop\product_new.html:339
-#: .\templates\shop\product_new.html:341
+#: .\templates\shop\product_discounted.html:343
+#: .\templates\shop\product_discounted.html:344
+#: .\templates\shop\product_discounted.html:346
+#: .\templates\shop\product_list.html:343
+#: .\templates\shop\product_list.html:344
+#: .\templates\shop\product_list.html:346
+#: .\templates\shop\product_new.html:341 .\templates\shop\product_new.html:342
+#: .\templates\shop\product_new.html:344
 msgid "toman"
 msgstr "تومان"
 
-#: .\templates\shop\product_list.html:357
-#: .\templates\shop\product_new.html:357
+#: .\templates\shop\product_discounted.html:362
+#: .\templates\shop\product_list.html:362
+#: .\templates\shop\product_new.html:360
 msgid "Why You Choose Us"
 msgstr "چرا ما را انتخاب می‌کنید؟"
 
-#: .\templates\shop\product_list.html:363
-#: .\templates\shop\product_new.html:363
+#: .\templates\shop\product_discounted.html:368
+#: .\templates\shop\product_list.html:368
+#: .\templates\shop\product_new.html:366
 msgid "24/7 Online Support"
 msgstr "پشتیبانی آنلاین 24 ساعته"
 
-#: .\templates\shop\product_list.html:364
-#: .\templates\shop\product_new.html:364
+#: .\templates\shop\product_discounted.html:369
+#: .\templates\shop\product_list.html:369
+#: .\templates\shop\product_new.html:367
 msgid ""
 "27-hour technical support per week: Our guarantee is that your website will "
 "be up and running."
@@ -158,14 +165,16 @@ msgstr ""
 "پشتیبانی فنی ۲۷ ساعته در هفته: تضمین ما این است که وب‌سایت شما راه‌اندازی و "
 "فعال خواهد شد."
 
-#: .\templates\shop\product_list.html:371
-#: .\templates\shop\product_new.html:371
+#: .\templates\shop\product_discounted.html:376
+#: .\templates\shop\product_list.html:376
+#: .\templates\shop\product_new.html:374
 #, python-format
 msgid "100%% quality"
 msgstr "کیفیت ۱۰۰٪"
 
-#: .\templates\shop\product_list.html:372
-#: .\templates\shop\product_new.html:372
+#: .\templates\shop\product_discounted.html:377
+#: .\templates\shop\product_list.html:377
+#: .\templates\shop\product_new.html:375
 msgid ""
 "By choosing us, you will not only receive a quality product, but also have "
 "the constant assurance of our support."
@@ -173,13 +182,15 @@ msgstr ""
 "با انتخاب ما، نه تنها محصولی با کیفیت دریافت خواهید کرد، بلکه از پشتیبانی "
 "مداوم ما نیز اطمینان خواهید داشت."
 
-#: .\templates\shop\product_list.html:379
-#: .\templates\shop\product_new.html:379
+#: .\templates\shop\product_discounted.html:384
+#: .\templates\shop\product_list.html:384
+#: .\templates\shop\product_new.html:382
 msgid "Home Delivery"
 msgstr "تحویل درب منزل"
 
-#: .\templates\shop\product_list.html:380
-#: .\templates\shop\product_new.html:380
+#: .\templates\shop\product_discounted.html:385
+#: .\templates\shop\product_list.html:385
+#: .\templates\shop\product_new.html:383
 msgid ""
 "Receive the product at your doorstep. Your quality product will be delivered"
 " directly and quickly to you."
@@ -187,12 +198,14 @@ msgstr ""
 "محصول را درب منزل خود دریافت کنید. محصول با کیفیت شما مستقیماً و سریع به "
 "دستتان خواهد رسید."
 
+#: .\templates\shop\product_list.html:6
+msgid "product list"
+msgstr "لیست محصولات"
+
 #: .\templates\shop\product_new.html:42
-#| msgid "products"
 msgid "new products"
 msgstr "محصولات جدید"
 
 #: .\templates\shop\product_new.html:313
-#| msgid "products"
 msgid "New Products"
 msgstr "محصولات جدید"

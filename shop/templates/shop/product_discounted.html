@@ -3,7 +3,7 @@
 {% load i18n %}
 
 {% block page_title %}
-    {% trans "product list" %}
+    {% trans "product discounted" %}
 {% endblock page_title %}
 
 {% block navbar %}
@@ -43,8 +43,8 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{% url 'shop:product_discounted' %}" class="nav-link">
-                                            {% trans "product discounted" %}
+                                        <a href="{% url 'shop:product_discounted'  %}" class="nav-link">
+                                           {% trans "product discounted" %}
                                         </a>
                                     </li>
                                 </ul>

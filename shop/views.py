@@ -17,10 +17,22 @@ class ProductDetail(DetailView):
     query_pk_and_slug = True  
 
 
-class NewProduct(ListView):
+class NewProductListView(ListView):
     model = Product
     context_object_name = "products"
     template_name = 'shop/product_new.html'
 
     def get_queryset(self):
         return Product.get_recent_products(days=10)
+
+class DiscountedProductListView(ListView):
+    model = Product
+    context_object_name = 'products'
+    template_name = 'shop/product_discounted.html'
+
+    def get_queryset(self):
+        queryset = Product.objects.filter(
+            is_active=True,
+            price_with_discount__isnull=False
+        )
+        return queryset
